@@ -46,6 +46,7 @@ def query(appid, mch_id, fee_type, date, sub_mch_id=None):
     params = locals()
     params['sign'] = createSignature(params)
     xml = dictToXml(params)
+    print xml
     r = requests.post("https://api.mch.weixin.qq.com/pay/queryexchagerate", verify=False, data=params)
     print r.text
 
