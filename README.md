@@ -4,7 +4,7 @@
 可以参看 https://pay.weixin.qq.com/wiki/doc/api/external/jsapi_sl.php?chapter=9_15&index=10
 
 | 值|说明
-|---|
+|---|---
 |appid|公众账号ID|
 |mch_id|商户号|
 |fee_type|参看下方货币编码|
@@ -13,7 +13,7 @@
 |sub_mch_id|子商户号(选填)|
 
 | 货币编码 | 中文说明
-|----------|
+|----------|------
 | CNY      | 人民币
 | GBP      | 英镑
 | HKD      | 港币
