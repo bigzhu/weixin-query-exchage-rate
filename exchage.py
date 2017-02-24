@@ -71,8 +71,8 @@ def query(appid, mch_id, fee_type, date, key, sub_mch_id=None):
     xml = dictToXml(params)
     r = requests.post("https://api.mch.weixin.qq.com/pay/queryexchagerate", data=xml, stream=True)
     text = r.raw.read()
-    print text
     msg = xmltodict.parse(toText(text))['xml']
+    return msg['rate']
 
 if __name__ == '__main__':
     pass
