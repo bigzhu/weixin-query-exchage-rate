@@ -36,9 +36,7 @@ def createSignature(params):
     l_params.sort()
     sha1 = hashlib.sha1()
     map(sha1.update, l_params)
-    print sha1
     signature = sha1.hexdigest()
-    print signature
     return signature
 
 
@@ -47,7 +45,7 @@ def query(appid, mch_id, fee_type, date, sub_mch_id=None):
     params['sign'] = createSignature(params)
     xml = dictToXml(params)
     print xml
-    r = requests.post("https://api.mch.weixin.qq.com/pay/queryexchagerate", verify=False, data=params)
+    r = requests.post("https://api.mch.weixin.qq.com/pay/queryexchagerate", data=params)
     print r.text
 
 if __name__ == '__main__':
