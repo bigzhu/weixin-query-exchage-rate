@@ -28,7 +28,7 @@
 
 
 
-例子
+## 例子
 
 ```python
 print query('wx6d5f2djfidj1d0e090e', 'djfidjfi', 'THB', '20170223', 'T5iab0cX9Xem9KP0zLUldjifdifhywEYw7')
